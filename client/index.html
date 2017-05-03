@@ -9,12 +9,14 @@
   <!--Import materialize.css-->
   <link type="text/css" rel="stylesheet" href="./node_modules/materialize-css/dist/css/materialize.min.css"  media="screen,projection"/>
 
+  <!--custom styles -->
+   <link type="text/css" rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <nav>
     <div class="nav-wrapper">
       <a href="#" class="brand-logo"><img src="./assets/envoy-logo.png" /></a>
-      <ul id="nav-mobile" class="right">
+      <ul id="nav-mobile" class="right hide-on-small">
         <li><a href="sass.html">Work</a></li>
         <li><a href="sass.html">Services</a></li>
         <li><a href="sass.html">Ventures</a></li>
@@ -48,8 +50,37 @@
   </div>
 
   <div class="content-container">
-    <h3>An independent full service creative agency helping brave brands build businesses and be heard in a world full of noise. <span class="company-color">We are Envoy.</span></h3>
-    <hr class="big-line">
+    <div class="description">
+      <h4>An independent full service creative agency helping brave brands build businesses and be heard in a world full of noise. <span class="company-color">We are Envoy.</span></h4>
+      <hr class="big-line" />
+    </div>
+    <h3>Featured Work</h3>
+    <hr class="small-line" />
+    <div class="featured-work">
+      <img src="./assets/featured-work/featured-1.jpg" alt="Boost Mobile Rebrand">
+
+      <h6 class="title">Title Here</h6>
+      <p>Description preview</p>
+      <a class="cta" href="featured-work/project-1">View Project</a>
+    </div>
+    <div class="featured-work">
+      <img src="./assets/featured-work/featured-1.jpg" alt="Boost Mobile Rebrand">
+
+      <h6 class="title">Title Here</h6>
+      <p>Description preview</p>
+      <a class="cta" href="featured-work/project-1">View Project</a>
+    </div>
+    <div class="featured-work">
+      <img src="./assets/featured-work/featured-1.jpg" alt="Boost Mobile Rebrand">
+
+      <h6 class="title">Title Here</h6>
+      <p>Description preview</p>
+      <a class="cta" href="featured-work/project-1">View Project</a>
+    </div>
+
+    <div class="wire">
+      <h4>The Weinstein Co Lets Envoy Loose on Sin City 2</h4>
+    </div>
 
     <!-- TODO:
       --Fill in carousel content
@@ -60,7 +91,7 @@
       --1x3 grid for Featured Work (pics included)
       --1x3 grid for Wire (no pics)
     -->
-  </div>
+  </div> <!-- /content-container -->
 
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script type="text/javascript" src="./node_modules/materialize-css/dist/js/materialize.min.js"></script>

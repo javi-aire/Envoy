@@ -1,0 +1,24 @@
+@import "./libraries/bourbon/bourbon";
+@import "./libraries/neat/neat";
+
+body {
+  max-height: 1560px;
+  margin: 0 auto;
+}
+
+.content-container {
+  max-width: 950px;
+  @include grid-container;
+}
+
+.description {
+  @include grid-column(12);
+}
+
+.featured-work {
+  @include grid-column(3);
+}
+
+.big-line {
+  border: 3px solid #282828;
+}
