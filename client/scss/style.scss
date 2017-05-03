@@ -1,8 +1,22 @@
 @import "./libraries/bourbon/bourbon";
 @import "./libraries/neat/neat";
 
+$custom-grid-thirds: (
+  columns: 3,
+  gutter: 2em,
+);
+
 body {
   max-width: 100%;
+}
+
+/* Header */
+.navbar {
+  @include transform(translateX(7vw) translateY(2vh));
+}
+
+.brand-logo {
+  @include transform(translateY(2vh));
 }
 
 .content {
@@ -19,7 +33,11 @@ body {
 }
 
 .featured-work {
-  @include grid-column(3);
+  @include grid-column(1, $custom-grid-thirds);
+}
+
+.wire {
+  @include grid-column(1, $custom-grid-thirds);
 }
 
 .big-line {
