@@ -2,12 +2,15 @@
 @import "./libraries/neat/neat";
 
 body {
-  max-height: 1560px;
+  max-width: 100%;
+}
+
+.content {
+  width: 950px;
   margin: 0 auto;
 }
 
 .content-container {
-  max-width: 950px;
   @include grid-container;
 }
 
